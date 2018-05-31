@@ -1,0 +1,6 @@
+<h4 class="todo-title">Todo:  </h4>
+<app-todo-item
+  [todo]="todo"
+  *ngFor="let todo of todos"
+  (changeTodo)="changeTodo($event)">
+</app-todo-item>

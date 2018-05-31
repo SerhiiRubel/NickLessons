@@ -4,8 +4,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
-    path: 'posts',
+    path: '',
     loadChildren: './posts/posts.module#PostsModule'
+  },
+  {
+    path: 'users',
+    loadChildren: './users/users.module#UsersModule'
   },
   { path: '', redirectTo: 'posts', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
